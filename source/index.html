@@ -9,22 +9,24 @@
       <nav class="site-navigation page-header__navigation">
         <!-- <button class="site-navigation__toggle--close"><span class="visually-hidden">Закрыть меню</span></button> -->
         <ul class="site-navigation__list">
-          <li class="site-navigation__item"><a>Главная</a></li>
-          <li class="site-navigation__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-navigation__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link">Главная</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="photo.html">Фото и видео</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="form.html">Форма отзыва</a></li>
+          <li class="site-navigation__item"><a class="site-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
         </ul>
         <button class="site-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
-      <a class="logo page-header__logo">
-        <img class="logo-image page-header__logo-image" alt="Логотип Седоны">
-      </a>      
+      <div class="logo page-header__logo">
+        <a class="logo__link">
+          <img class="logo__image" alt="Логотип Седоны">
+        </a>
+      </div>      
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Седона</h1>
       <section class="intro">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <div></div>
+        <img class="intro__img" alt="Добро пожаловать в Седону!">
         <p class="intro__description">Седона — небольшой городок в Аризоне, заслуживающий большего</p>
       </section>
       <section class="advantages">
@@ -32,23 +34,23 @@
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__header">Настоящий городок</h3>
+            <h3 class="title advantages__header">Настоящий городок</h3>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__header">Там есть Мост дьявола</h3>
+            <h3 class="title advantages__header">Там есть Мост дьявола</h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__header">Небольшая площадь</h3>
+            <h3 class="title advantages__header">Небольшая площадь</h3>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__header">Красивая дорога</h3>
+            <h3 class="title advantages__header">Красивая дорога</h3>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__header">Мало туристов</h3>
+            <h3 class="title advantages__header">Мало туристов</h3>
             <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
@@ -57,15 +59,15 @@
         <h2 class="visually-hidden">Советы</h2>
         <ul class="tips__list">
           <li class="tips__item tips__item--home">
-            <h3 class="tips__header">Жилье</h3>
+            <h3 class="title tips__header">Жилье</h3>
             <p class="tips__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="tips__item tips__item--souvenirs">
-            <h3 class="tips__header">Сувениры</h3>
+            <h3 class="title tips__header">Сувениры</h3>
             <p class="tips__description">Не только китайского, но и местного производства!</p>
           </li>
           <li class="tips__item tips__item--food">
-            <h3 class="tips__header">Еда</h3>
+            <h3 class="title tips__header">Еда</h3>
             <p class="tips__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
@@ -76,7 +78,10 @@
         <a class="button booking__button" href="#">Найти гостиницу</a>
       </section>
       <section class="map">
-        <h2>Карта Седоны</h2>
+        <h2 class="visually-hidden">Карта Седоны</h2>
+        <div class="map__wrapper">
+          <img class="map__image visually-hidden" alt="Карта Седоны">
+        </div>
       </section>
     </main>
     <footer class="page-footer">
