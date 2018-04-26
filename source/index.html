@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -33,23 +35,25 @@
         <h2 class="visually-hidden">Преимущества поездки в Седону</h2>
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--blue-back">
             <h3 class="title advantages__header">Настоящий городок</h3>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="advantages__img" alt="Седона">
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--blue-back">
             <h3 class="title advantages__header">Там есть Мост дьявола</h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="advantages__img" alt="Мост дьявола">
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--grey-back">
             <h3 class="title advantages__header">Небольшая площадь</h3>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--grey-back">
             <h3 class="title advantages__header">Красивая дорога</h3>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--grey-back">
             <h3 class="title advantages__header">Мало туристов</h3>
             <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -74,6 +78,7 @@
       </section>
       <section class="booking">
         <h2 class="visually-hidden">Поиск жилья</h2>
+        <p class="title booking__text">Заинтересовались?</p>
         <p class="booking__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="button booking__button" href="#">Найти гостиницу</a>
       </section>
@@ -97,7 +102,7 @@
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" alt="Логотип HTML-academy">
-        <a>
+        </a>
       </div>
     </footer>
   </body>
