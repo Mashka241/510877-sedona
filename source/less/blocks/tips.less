@@ -1,6 +1,4 @@
 .tips {
-  width: 280px;
-  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -10,8 +8,27 @@
   list-style: none;
 }
 
+.tips__header {
+  text-align: center;
+}
+
 .tips__description {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
+}
+
+@media(min-width: @tablet-width) {
+  .tips {
+    padding: 0;
+  }
+
+  .tips__list {
+    display: flex;
+  }
+
+  .tips__item {
+    width: 33.33%;
+  }
 }

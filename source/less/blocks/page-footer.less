@@ -11,3 +11,34 @@
   line-height: 26px;
   font-weight: 700;
 }
+
+.page-footer__copyright {
+  margin: 0 65px;
+}
+
+@media(min-width: @tablet-width) {
+  .page-footer {
+    width: auto;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .page-footer__hashtag {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 960px;
+  }
+}

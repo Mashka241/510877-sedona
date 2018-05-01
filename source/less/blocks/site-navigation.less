@@ -1,5 +1,4 @@
 .site-navigation {
-  padding: 0 20px;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
@@ -17,4 +16,40 @@
 .site-navigation__link {
   color: @white;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: @black;
+    width: 768px;
+    min-height: 56px;
+    margin: 0 auto;
+    background-color: @white;
+  }
+
+  .site-navigation__link {
+    color: @black;
+  }
+
+  .site-navigation__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .site-navigation__item:nth-child(2) {
+    margin-right: 180px;
+  }
+
+  .site-navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-navigation {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

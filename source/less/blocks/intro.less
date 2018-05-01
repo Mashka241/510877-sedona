@@ -1,13 +1,28 @@
 .intro {
   width: 320px;
   margin: 0 auto;
+}
+
+.intro__wrapper {
+  width: auto;
+  padding-top: 90px;
+  padding-bottom: 80px;
   background-color: #88b9d9;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
+.intro__img {
+  display: block;
+  width: 280px;
+  height: 220px;
+  margin: 0 auto;
+}
+
 .intro__description {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 40px;
   padding: 0 20px;
   font-size: 18px;
   font-weight: 700;
@@ -15,4 +30,45 @@
   color: @black;
   text-transform: uppercase;
   background-color: @white;
+}
+
+.photo-page .intro__wrapper,
+.form-page .intro__wrapper {
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+
+.photo-page .intro__img,
+.form-page .intro__img {
+  width: 235px;
+  height: 50px;
+}
+
+@media(min-width: @tablet-width) {
+  .intro {
+    width: auto;
+  }
+
+  .intro__wrapper {
+    width: @tablet-width;
+    margin: 0 auto;
+    background-size: cover;
+  }
+
+  .intro__img {
+    width: 464px;
+    height: 355px;
+  }
+
+  .photo-page .intro__img,
+  .form-page .intro__img {
+    width: 464px;
+    height: 78px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .intro__wrapper {
+    width: @desktop-width;
+  }
 }
