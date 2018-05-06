@@ -2,14 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <nav class="site-navigation page-header__navigation">
-        <!-- <button class="site-navigation__toggle--close"><span class="visually-hidden">Закрыть меню</span></button> -->
+      <nav class="site-navigation page-header__navigation site-navigation--closed">
         <ul class="site-navigation__list">
           <li class="site-navigation__item"><a class="site-navigation__link" href="index.html">Главная</a></li>
           <li class="site-navigation__item"><a class="site-navigation__link" href="photo.html">Фото и видео</a></li>
@@ -19,9 +19,11 @@
         <button class="site-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
       <div class="logo page-header__logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__image" alt="Логотип Седоны">
-        </a>
+        <div class="logo__wrapper">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image" alt="Логотип Седоны">
+          </a>
+        </div>
       </div>
     </header>
     <main class="form-page">

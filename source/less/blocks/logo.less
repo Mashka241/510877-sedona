@@ -1,24 +1,22 @@
 .logo {
-  width: 103px;
-  height: 82px;
+  width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: @white;
+}
+
+.logo__image {
+  width: 100px;
+}
+
+.logo__wrapper {
+  height: 56px;
+  text-align: center;
+
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 105px;
-    padding: 0;
-    transform: translateX(-50%);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__logo {
-    width: 190px;
-    height: 97px;
+  .logo {
+    height: 0;
   }
 }

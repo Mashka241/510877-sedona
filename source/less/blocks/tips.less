@@ -1,5 +1,5 @@
 .tips {
-  padding: 0 20px;
+  padding: 35px 20px;
 }
 
 .tips__list {
@@ -8,15 +8,24 @@
   list-style: none;
 }
 
+.tips__item {
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.tips__item:last-child {
+  margin-bottom: 0;
+}
+
 .tips__header {
-  text-align: center;
+  text-align: left;
 }
 
 .tips__description {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,5 +39,6 @@
 
   .tips__item {
     width: 33.33%;
+    margin: 0;
   }
 }
