@@ -6,24 +6,33 @@
   list-style: none;
 }
 
+.social__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: @white;
+}
+
 .social__link {
   display: block;
   width: 47px;
   height: 47px;
   background-color: @blue;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__link:active ~ .social__icon {
+  fill: #88b6d1;
 }
 
 .social__item {
   position: relative;
-}
-
-.social__item svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.social__item path {
-  fill: @white;
 }

@@ -9,8 +9,17 @@
 }
 
 .tips__item {
+  position: relative;
   margin-bottom: 30px;
   margin-left: 50px;
+}
+
+.tips__icon {
+  position: absolute;
+  left: -50px;
+  width: 40px;
+  height: 40px;
+  fill: @blue;
 }
 
 .tips__item:last-child {
@@ -30,15 +39,34 @@
 
 @media (min-width: @tablet-width) {
   .tips {
-    padding: 0;
+    padding: 60px;
+  }
+
+  .tips__header {
+    margin-bottom: 25px;
+    text-align: center;
   }
 
   .tips__list {
     display: flex;
   }
 
+  .tips__description {
+    text-align: center;
+  }
+
   .tips__item {
     width: 33.33%;
     margin: 0;
+    padding: 0 46px;
+    padding-top: 100px;
+  }
+
+  .tips__icon {
+    top: 0;
+    left: 50%;
+    width: 77px;
+    height: 69px;
+    transform: translateX(-50%);
   }
 }

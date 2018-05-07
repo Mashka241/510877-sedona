@@ -43,12 +43,23 @@
 }
 
 .advantages__header {
+  position: relative;
   margin-bottom: 50px;
   padding: 0 20px;
   text-align: center;
 }
 
+.advantages__description::before {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  counter-increment: advantage;
+  content: "— №"counter(advantage)" —";
+  transform: translateX(-50%);
+}
+
 .advantages__description {
+  position: relative;
   margin: 0;
   padding: 0 20px;
   font-size: 14px;
@@ -74,7 +85,6 @@
 
   .advantages__main-header {
     width: 450px;
-    margin: 0 auto;
     font-size: 21px;
   }
 
