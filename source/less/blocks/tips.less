@@ -1,7 +1,5 @@
 .tips {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 35px 20px;
 }
 
 .tips__list {
@@ -10,8 +8,65 @@
   list-style: none;
 }
 
+.tips__item {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.tips__icon {
+  position: absolute;
+  left: -50px;
+  width: 40px;
+  height: 40px;
+  fill: @blue;
+}
+
+.tips__item:last-child {
+  margin-bottom: 0;
+}
+
+.tips__header {
+  text-align: left;
+}
+
 .tips__description {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .tips {
+    padding: 60px;
+  }
+
+  .tips__header {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .tips__list {
+    display: flex;
+  }
+
+  .tips__description {
+    text-align: center;
+  }
+
+  .tips__item {
+    width: 33.33%;
+    margin: 0;
+    padding: 0 46px;
+    padding-top: 100px;
+  }
+
+  .tips__icon {
+    top: 0;
+    left: 50%;
+    width: 77px;
+    height: 69px;
+    transform: translateX(-50%);
+  }
 }

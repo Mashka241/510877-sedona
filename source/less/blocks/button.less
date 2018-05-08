@@ -2,6 +2,7 @@
   display: inline-block;
   padding: 20px 45px;
   vertical-align: top;
+  text-align: center;
   font: inherit;
   font-size: 21px;
   line-height: 26px;
@@ -11,4 +12,17 @@
   text-transform: uppercase;
   background-color: @blue;
   border: none;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
 }
