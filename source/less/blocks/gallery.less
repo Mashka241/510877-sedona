@@ -26,9 +26,19 @@
   list-style: none;
 }
 
+.gallery__item {
+  padding-bottom: 22px;
+  padding-top: 22px;
+}
+
 .gallery__header {
   font-size: 14px;
   line-height: 24px;
+}
+
+.gallery__photo {
+  display: block;
+  width: 280px;
 }
 
 .gallery__author {
@@ -37,9 +47,18 @@
 }
 
 .gallery__likes {
+  display: flex;
+}
+
+.gallery__likes-number {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.gallery__likes-icon {
+  margin-right: 15px;
+  fill: #b2b2b2
 }
 
 .gallery__video-text {
@@ -85,10 +104,30 @@
 
   .gallery__item {
     width: 50%;
+    padding: 0;
   }
 
   .gallery__item:nth-child(1) {
     width: 100%;
+  }
+
+  .gallery__photo {
+    width: 100%;
+  }
+
+  .gallery__photo-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .gallery__likes {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
   }
 }
 
@@ -99,6 +138,21 @@
   }
 
   .gallery__item {
+    position: relative;
     width: 33.33%;
+  }
+
+  .gallery__photo-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: @white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery__likes-icon {
+    fill: @white;
   }
 }

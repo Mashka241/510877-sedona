@@ -1,0 +1,46 @@
+.checkbox-list__item {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.checkbox-list__label {
+  position: relative;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.checkbox-list__label::after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 0px;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.checkbox-list__button:checked + .checkbox-list__label::after {
+  background-image: url("../img/icon-tick.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.checkbox-list__button:focus + .checkbox-list__label::after {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox-list__button:hover + .checkbox-list__label::after {
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+
+/*.checkbox-list__button:active + .checkbox-list__label::after {
+  
+}*/
