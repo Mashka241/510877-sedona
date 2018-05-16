@@ -1,5 +1,4 @@
 .text-input {
-  position: relative;
   display: flex;
   align-items: center;
   margin: 0;
@@ -7,7 +6,11 @@
   padding: 0;
 }
 
-.text-input--column {
+.text-input__wrapper {
+  position: relative;
+}
+
+.text-input--wrap-behaviour {
   flex-wrap: wrap;
 }
 
@@ -18,14 +21,16 @@
 }
 
 .text-input__field {
+  width: 100%;
   flex-grow: 1;
   box-sizing: border-box;
   height: 58px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 18px;
   border: 5px solid #f2f2f2;
   background-color: #f2f2f2;
+  outline: none;
 }
 
 .text-input__field--icon {
@@ -58,7 +63,7 @@
 }
 
 .text-input__field::placeholder {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 700;
   color: @black;
@@ -67,9 +72,27 @@
 .text-input__field:hover {
   background-color: #e5e5e5;
   border-color: #e5e5e5;
+ 
+  box-shadow: 0 0 0 2px -webkit-focus-ring-color;
 }
 
-.text-input__field:active {
+.text-input__field:focus {
   background-color: @white;
   border-color: #e5e5e5;
+  
+  box-shadow: 0 0 0 2px -webkit-focus-ring-color;
+}
+
+.text-input--wrap-behaviour .text-input__label {
+    width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+  .text-input--wrap-behaviour {
+    flex-wrap: nowrap;
+  }
+
+  .text-input--wrap-behaviour .text-input__label {
+    width: auto;
+  }
 }

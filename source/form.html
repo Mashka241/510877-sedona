@@ -55,26 +55,30 @@
                 </p>
               </div>
             </fieldset>
-            <fieldset class="review__fieldset review__fieldset--width-full">
+            <fieldset class="review__fieldset review__fieldset--width-full review__fieldset--small-bmargin review__fieldset--contacts">
               <div class="review__fieldset-wrapper">
                 <legend class="review__header">Контактная информация:</legend>
                 <div class="review__contacts-wrapper">
-                  <p class="text-input text-input--column review__text-input">
-                    <label class="text-input__label">Контактный телефон<sup>*</sup>:</label>
-                    <input class="text-input__field text-input__field--icon" type="tel" placeholder="Введите телефон" required>
-                    <span class="text-input__icon text-input__icon--phone"></span>
+                  <p class="text-input text-input--wrap-behaviour review__text-input">
+                    <label class="text-input__label"><span class="review__hidden-line">Контактный</span> телефон<sup>*</sup>:</label>
+                    <span class="text-input__wrapper">
+                      <input class="text-input__field text-input__field--icon" type="tel" placeholder="Введите телефон" required>
+                      <span class="text-input__icon text-input__icon--phone"></span>
+                    </span>
                   </p>
-                  <p class="text-input text-input--column review__text-input">
+                  <p class="text-input text-input--wrap-behaviour review__text-input">
                     <label class="text-input__label" type="email">Электронная почта<sup>*</sup>:</label>
-                    <input class="text-input__field text-input__field--icon" placeholder="Введите e-mail" required>
-                    <span class="text-input__icon text-input__icon--mail"></span>
+                    <span class="text-input__wrapper">
+                      <input class="text-input__field text-input__field--icon" placeholder="Введите e-mail" required>
+                      <span class="text-input__icon text-input__icon--mail"></span>
+                    </span>
                   </p>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="review__fieldset review__fieldset--width-half">
-              <div class="review__fieldset-wrapper">
-                <legend class="review__header review__header--left">Ваше общее впечатление:</legend>
+            <fieldset class="review__fieldset review__fieldset--width-half review__fieldset--felling">
+              <div class="review__fieldset-wrapper ">
+                <legend class="review__header review__header--left review__header--lmargin">Ваше общее впечатление:</legend>
                 <ul class="review__feeling-list radio-list">
                   <li class="radio-list__item">
                     <input class="radio-list__button visually-hidden" type="radio" name="review-feeling" id="positive" value="Скорее положительное" checked>
@@ -91,9 +95,9 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="review__fieldset review__fieldset--width-full">
+            <fieldset class="review__fieldset review__fieldset--width-full review__fieldset--small-bmargin review__fieldset--sights">
               <div class="review__fieldset-wrapper review__fieldset-wrapper--columns">
-                <legend class="review__header">Посещенные достопримечательности:</legend>
+                <legend class="review__header review__header--small-bmargin">Посещенные достопримечательности:</legend>
                 <ul class="review__list review__list--sight checkbox-list">
                   <li class="review__item checkbox-list__item">
                     <input class="checkbox-list__button visually-hidden" type="checkbox" name="devils-bridge-trail" id="devils-bridge-trail" checked>
@@ -114,9 +118,9 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="review__fieldset review__fieldset--width-full">
+            <fieldset class="review__fieldset review__fieldset--width-full review__fieldset--small-bmargin">
               <div class="review__fieldset-wrapper">
-                <legend class="review__header">Опишите свои эмоции</legend>
+                <legend class="review__header emotions">Опишите свои эмоции</legend>
                 <p class="text-input review__text-input">
                   <label class="text-input__label visually-hidden">Опишите свои эмоции</label>
                   <textarea class="text-input__field text-input__field--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
