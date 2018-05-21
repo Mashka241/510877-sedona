@@ -1,5 +1,5 @@
 .tips {
-  padding: 35px 20px;
+  padding: 36px 20px;
 }
 
 .tips__list {
@@ -10,15 +10,16 @@
 
 .tips__item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   margin-left: 50px;
 }
 
 .tips__icon {
   position: absolute;
   left: -50px;
+  top: -10px;
   width: 40px;
-  height: 40px;
+  height: 37px;
   fill: @blue;
 }
 
@@ -27,6 +28,9 @@
 }
 
 .tips__header {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: left;
 }
 
@@ -39,16 +43,21 @@
 
 @media (min-width: @tablet-width) {
   .tips {
-    padding: 60px;
+    padding: 60px 0;
   }
 
   .tips__header {
-    margin-bottom: 25px;
+    font-size: 21px;
+    margin-bottom: 22px;
     text-align: center;
   }
 
   .tips__list {
     display: flex;
+  }
+
+  .tips__item--souvenirs {
+    order: 2;
   }
 
   .tips__description {
@@ -66,7 +75,17 @@
     top: 0;
     left: 50%;
     width: 77px;
-    height: 69px;
+    height: 72px;
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tips {
+    padding-bottom: 81px;
+  }
+
+  .tips__description {
+    padding: 0 5px;
   }
 }

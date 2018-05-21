@@ -1,9 +1,96 @@
 .text-input {
+  display: flex;
+  align-items: center;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 }
 
+.text-input__wrapper {
+  position: relative;
+}
+
+.text-input--wrap-behaviour {
+  flex-wrap: wrap;
+}
+
 .text-input__label {
+  margin-right: 13px;
   font-size: 14px;
   line-height: 26px;
+}
+
+.text-input__field {
+  width: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 58px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  border: 5px solid #f2f2f2;
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.text-input__field--icon {
+  padding-right: 58px;
+}
+
+.text-input__icon {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.text-input__icon--phone {
+  background-image: url("../img/icon-phone.svg");
+}
+
+.text-input__icon--mail {
+  background-image: url("../img/icon-mail.svg");
+}
+
+.text-input__field--textarea {
+  min-height: 160px;
+}
+
+.text-input__field::placeholder {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: @black;
+}
+
+.text-input__field:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  box-shadow: 0 0 0 2px #81b3d2;
+}
+
+.text-input__field:focus {
+  background-color: @white;
+  border-color: #e5e5e5;
+  box-shadow: 0 0 0 2px #81b3d2;
+}
+
+.text-input--wrap-behaviour .text-input__label {
+  width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+  .text-input--wrap-behaviour {
+    flex-wrap: nowrap;
+  }
+
+  .text-input--wrap-behaviour .text-input__label {
+    width: auto;
+  }
 }

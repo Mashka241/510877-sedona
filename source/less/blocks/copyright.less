@@ -3,10 +3,31 @@
   justify-content: space-between;
   width: 140px;
   padding: 0 5px;
+  box-sizing: border-box;
 }
 
 .copyright__text {
   margin: 0;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 32px;
+}
+
+.copyright__icon:hover {
+  fill: #81b3d2;
+}
+
+.copyright__icon:active {
+  fill: #b2b2b2;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    padding-top: 5px;
+    padding-left: 7px;
+    margin-right: 13px;
+  }
+
+  .copyright__link {
+    padding-top: 5px;
+  }
 }

@@ -2,6 +2,7 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 56px;
   background-color: @white;
 }
 
@@ -9,11 +10,13 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     width: auto;
+    margin-bottom: 0;
   }
 
   .page-header__logo {
