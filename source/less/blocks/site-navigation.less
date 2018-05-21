@@ -92,8 +92,14 @@
   }
 }
 
-.site-navigation--nojs .site-navigation__toggle {
-  display: none;
+@media (max-width: @mobile-width-only) {
+  .site-navigation--nojs .site-navigation__toggle {
+    display: none;
+  }
+
+  .site-navigation--closed .site-navigation__list {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
