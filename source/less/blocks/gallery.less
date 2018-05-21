@@ -150,6 +150,7 @@
   }
 
   .gallery__photo-info {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -159,9 +160,19 @@
   }
 
   .gallery__likes {
+    position: absolute;
+    left: 239px;
     padding-top: 13px;
     padding-bottom: 8px;
     padding-right: 20px;
+  }
+
+  .gallery__likes-icon {
+    margin-right: 11px;
+  }
+
+  .gallery__item:nth-child(1) .gallery__likes {
+    left: 564px;
   }
 
   .gallery__video-text {
@@ -189,7 +200,7 @@
   }
 
   .gallery__description {
-    padding: 0 351px;
+    padding: 0 386px;
     margin-bottom: 71px;
   }
 
@@ -215,6 +226,14 @@
     box-sizing: border-box;
     color: @white;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery__likes {
+    left: 315px;
+  }
+
+  .gallery__item:nth-child(1) .gallery__likes {
+    left: 1115px;
   }
 
   .gallery__likes-icon {
