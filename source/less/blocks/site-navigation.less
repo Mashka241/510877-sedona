@@ -25,6 +25,7 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  z-index: 3;
 }
 
 .site-navigation--opened .site-navigation__toggle::before,
@@ -92,9 +93,9 @@
   }
 }
 
-/*@media (min-width: mobile-width-only) {
-
-}*/
+.site-navigation--nojs .site-navigation__toggle {
+  display: none;
+}
 
 @media (min-width: @tablet-width) {
   .site-navigation {
